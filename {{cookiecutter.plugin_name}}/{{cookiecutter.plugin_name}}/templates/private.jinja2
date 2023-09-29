@@ -1,0 +1,31 @@
+{% extends 'private/page.jinja2' %}
+
+{% block title %}
+    <title>{{ _('Private') }}</title>
+{% endblock %}
+
+{% block css %}
+    {% cssresource request,'main_library','adminlte' %}
+    {% cssresource request,'main_library','toastr' %}
+    {% cssresource request,'main_library','sweetalert' %}
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+{% endblock css %}
+
+{% block topScripts %}
+    {% include 'private/snippets/delete.jinja2' %}
+    {% jsresource request,'main_library','toastr' %}
+    {% jsresource request,'main_library','sweetalert' %}
+{% endblock topScripts %}
+
+{% block breadcrums %}
+    {% set _title = _("PrivateView "+activeUser.login) %}
+    {% include 'private/snippets/breadcrums.jinja2' %}
+{% endblock breadcrums %}
+
+{% block main_container %}
+    <div class="row">
+        <div class="col-lg-12">
+
+        </div>
+    </div>
+{% endblock main_container %}

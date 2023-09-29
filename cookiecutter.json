@@ -1,0 +1,14 @@
+{
+  "plugin_description": "A plugin",
+  "plugin_name": "{{cookiecutter.plugin_description.lower().strip().replace(' ', '_').replace(':', '_').replace('-', '_').replace('!', '_')}}",
+  "plugin_for": "For which application is the plugin?",
+  "plugin_hasCeleryTasks": "N",
+  "plugin_version": "1.0",
+  "plugin_author": "Myself",
+  "plugin_author_email": "me@myserver.com",
+  "plugin_author_url": "www.myserver.com",
+  "_copy_without_render": [
+    "*jinja2"
+  ]
+}
+

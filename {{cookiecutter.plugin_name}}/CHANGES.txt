@@ -1,0 +1,4 @@
+{{ cookiecutter.plugin_version }}
+---
+
+- Initial version.
